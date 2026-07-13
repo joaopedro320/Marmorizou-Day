@@ -6,8 +6,8 @@
 <title>Marmorizou Day 2026 — O maior evento de gestão e vendas para marmorarias do Brasil</title>
 <meta name="description" content="Marmorizou Day 2026: imersão em gestão, vendas e crescimento para empresários do setor de rochas. São Paulo, 25 de Julho.">
 <meta name="theme-color" content="#0B1628">
-<meta property="og:title" content="Marmorizou Day 2026"><meta property="og:description" content="Um dia para destravar o crescimento da sua marmoraria."><meta property="og:type" content="website"><meta property="og:image" content="https://marmorizou.com/wp-content/uploads/2025/10/marmorizou_banner-site3.jpg">
-<link rel="icon" href="https://marmorizou.com/wp-content/uploads/2023/05/cropped-logo-mrz-day-1-32x32.png" sizes="32x32">
+<meta property="og:title" content="Marmorizou Day 2026"><meta property="og:description" content="Um dia para destravar o crescimento da sua marmoraria."><meta property="og:type" content="website"><meta property="og:image" content="./images/evento-day-capa.jpg">
+<link rel="icon" href="./images/favicon.png" sizes="32x32">
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5XFMB8D4');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -35,20 +35,20 @@ body>*{position:relative;z-index:1}
 /* HERO */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 24px 60px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.12;filter:brightness(.5)}
-.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(0,229,255,.06) 0%,transparent 50%),linear-gradient(180deg,rgba(11,22,40,.3) 0%,var(--bg) 100%)}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.55;filter:brightness(.5) saturate(.95)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(0,229,255,.05) 0%,transparent 55%),linear-gradient(180deg,rgba(11,22,40,.55) 0%,rgba(11,22,40,.75) 55%,var(--bg) 100%)}
 .ptcl-w{position:absolute;inset:0;z-index:1;pointer-events:none}
 .ptcl{position:absolute;width:2px;height:2px;background:var(--cy);border-radius:50%;opacity:0;animation:ptUp 10s infinite}
 @keyframes ptUp{0%{opacity:0;transform:translateY(0) scale(0)}8%{opacity:.5}85%{opacity:0}100%{transform:translateY(-100vh) scale(1)}}
 .hero-ct{position:relative;z-index:2;max-width:780px}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--cy10);border:1px solid rgba(0,229,255,.3);color:var(--cy);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:28px;animation:badgeP 3s infinite}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(11,22,40,.55);backdrop-filter:blur(6px);border:1px solid rgba(0,229,255,.4);color:var(--cy);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:28px;animation:badgeP 3s infinite}
 @keyframes badgeP{0%,100%{box-shadow:0 0 0 0 rgba(0,229,255,.25)}50%{box-shadow:0 0 0 8px rgba(0,229,255,0)}}
 .hero-badge .dot{width:6px;height:6px;background:var(--cy);border-radius:50%;animation:bl 1.5s infinite}
 @keyframes bl{0%,100%{opacity:1}50%{opacity:.3}}
-.hero-loc{font-size:13px;font-weight:500;color:var(--g3);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px}
-.hero h1{font-family:var(--df);font-size:clamp(2.2rem,6vw,4.2rem);text-transform:uppercase;line-height:1.05;letter-spacing:.02em;margin-bottom:24px}
-.hero-sub{font-size:16px;color:var(--g2);line-height:1.8;max-width:620px;margin:0 auto 36px}
-.hero-sub strong{color:var(--w);font-weight:600}
+.hero-loc{font-size:13px;font-weight:700;color:var(--w);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.hero h1{font-family:var(--df);font-size:clamp(2.2rem,6vw,4.2rem);text-transform:uppercase;line-height:1.05;letter-spacing:.02em;margin-bottom:24px;text-shadow:0 4px 24px rgba(0,0,0,.85),0 2px 8px rgba(0,0,0,.6)}
+.hero-sub{font-size:16px;color:var(--g1);line-height:1.8;max-width:620px;margin:0 auto 36px;text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.hero-sub strong{color:var(--w);font-weight:700}
 .tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:16px}
 .tags span{font-size:11px;color:var(--g4);border:1px solid rgba(255,255,255,.08);padding:6px 14px;border-radius:100px}
 
@@ -204,12 +204,18 @@ body>*{position:relative;z-index:1}
   gap:20px;width:max-content;margin:0 auto;padding:4px 4px 12px;
 }
 .insta-embed{
-  overflow:visible;background:transparent;border:none;
-  width:308px;display:flex;justify-content:center;
+  overflow:hidden;background:transparent;border:none;
+  width:308px;height:500px;display:flex;justify-content:center;align-items:flex-start;
+  border-radius:var(--r);position:relative;
 }
-.insta-embed iframe{border-radius:var(--r)!important}
-.insta-embed .instagram-media{margin:0 auto!important;width:100%!important;min-width:0!important}
-@media(max-width:640px){.insta-grid{grid-template-columns:repeat(4,280px);gap:14px}.insta-embed{width:280px}}
+.insta-embed::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:36px;
+  background:linear-gradient(0deg,var(--bg2) 0%,transparent 100%);
+  pointer-events:none;z-index:2;border-radius:0 0 var(--r) var(--r);
+}
+.insta-embed iframe{width:100%!important;border-radius:var(--r)!important}
+.insta-embed .instagram-media{margin:0 auto!important;width:100%!important;min-width:0!important;max-width:100%!important}
+@media(max-width:640px){.insta-grid{grid-template-columns:repeat(4,280px);gap:14px}.insta-embed{width:280px;height:460px}}
 .insta-l{display:inline-flex;align-items:center;gap:10px;margin-top:28px;color:var(--cy);font-weight:600;font-size:14px;transition:gap .3s}
 .insta-l:hover{gap:16px}
 .insta-l svg{width:18px;height:18px;fill:currentColor}
@@ -291,17 +297,17 @@ body>*{position:relative;z-index:1}
 
 <!-- HEADER -->
 <header class="hdr" id="hdr">
-<div class="wrap"><a href="#"><img class="hdr-logo" src="https://marmorizou.com/wp-content/uploads/2023/11/icon-marmorizou-portal.png" alt="Marmorizou" loading="lazy"></a><a href="https://pay.kiwify.com.br/XUCIHGI" class="hdr-btn" target="_blank" rel="noopener">Garantir Ingresso</a></div>
+<div class="wrap"><a href="#"><img class="hdr-logo" src="./images/logo-marmorizou.png" alt="Marmorizou" loading="lazy"></a><a href="https://pay.kiwify.com.br/XUCIHGI" class="hdr-btn" target="_blank" rel="noopener">Garantir Ingresso</a></div>
 </header>
 
 <!-- HERO -->
 <section class="hero" id="hero">
-<div class="hero-bg"><img src="https://marmorizou.com/wp-content/uploads/2025/10/marmorizou_banner-site3.jpg" alt="Marmorizou Day 2026"></div>
+<div class="hero-bg"><img src="./images/hero-bg.jpg" alt="Marmorizou Day — última edição"></div>
 <div class="ptcl-w" id="ptcl"></div>
 <div class="hero-ct">
 <div class="hero-badge"><span class="dot"></span> Inscrições Abertas</div>
 <p class="hero-loc">São Paulo &bull; 25 de julho de 2026</p>
-<h1 class="dsp">Um dia para <span class="acc">destravar</span> o crescimento da sua marmoraria.</h1>
+<h1 class="dsp">Um dia para destravar o <span class="acc">crescimento da sua marmoraria.</span></h1>
 <p class="hero-sub">O Marmorizou Day 2026 foi criado para empresários do setor que sentem que precisam crescer de forma sustentável, construindo processos sólidos que serão geridos por indicadores claros e que entreguem resultado de verdade.<br><strong>Você não sabe exatamente por onde começar?</strong></p>
 <div class="cd" id="cd">
 <div class="cd-i"><span class="n" id="cd-d">--</span><span class="l">Dias</span></div>
@@ -321,23 +327,23 @@ body>*{position:relative;z-index:1}
 <section class="marq-sec" id="edicoes">
 <div class="wrap rv"><div class="marq-header"><p class="ey">Edições Anteriores</p><h2 class="st center">Quem esteve, <span class="acc">sentiu na pele.</span></h2></div></div>
 <div class="marq-track" id="mT">
-<div class="mc" data-i="0"><img src="https://marmorizou.com/wp-content/uploads/2025/10/marmorizou_banner-site.jpg" alt="Camp 2025" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="1"><img src="https://marmorizou.com/wp-content/uploads/2025/10/marmorizou_banner-site3.jpg" alt="Day 2025" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="2"><img src="https://marmorizou.com/wp-content/uploads/2025/09/marmorizou_banner-site-scaled.jpg" alt="Imersão" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="3"><img src="https://marmorizou.com/wp-content/uploads/2025/09/marmorizou_banner-site3-scaled.jpg" alt="Evento" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="4"><img src="https://marmorizou.com/wp-content/uploads/2025/09/marmorizou_banner-site2-scaled.jpg" alt="Networking" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="5"><img src="https://marmorizou.com/wp-content/uploads/2025/09/Design-sem-nome-18.png" alt="Day 2025 Palco" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="6"><img src="https://marmorizou.com/wp-content/uploads/2025/09/Captura-de-tela-2025-09-04-170634-300x199.png" alt="Palestrantes" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="7"><img src="https://marmorizou.com/wp-content/uploads/elementor/thumbs/IMG_0240-scaled-r0yufl8ax3f7klrrzjumm9ggvn5g1ldkodx0xuecg8.jpg" alt="Ricardo" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="0"><img src="./images/evento-camp.jpg" alt="Camp 2025" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="1"><img src="./images/evento-day-capa.jpg" alt="Day 2025" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="2"><img src="./images/evento-imersao.jpg" alt="Imersão" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="3"><img src="./images/evento-day.jpg" alt="Evento" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="4"><img src="./images/evento-networking.jpg" alt="Networking" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="5"><img src="./images/marquee-palco.png" alt="Day 2025 Palco" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="6"><img src="./images/marquee-palestrantes.png" alt="Palestrantes" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="7"><img src="./images/palestrante-ricardo.jpg" alt="Ricardo" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
 <!-- duplicados -->
-<div class="mc" data-i="0"><img src="https://marmorizou.com/wp-content/uploads/2025/10/marmorizou_banner-site.jpg" alt="Camp" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="1"><img src="https://marmorizou.com/wp-content/uploads/2025/10/marmorizou_banner-site3.jpg" alt="Day" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="2"><img src="https://marmorizou.com/wp-content/uploads/2025/09/marmorizou_banner-site-scaled.jpg" alt="Imersão 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="3"><img src="https://marmorizou.com/wp-content/uploads/2025/09/marmorizou_banner-site3-scaled.jpg" alt="Evento 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="4"><img src="https://marmorizou.com/wp-content/uploads/2025/09/marmorizou_banner-site2-scaled.jpg" alt="Net 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="5"><img src="https://marmorizou.com/wp-content/uploads/2025/09/Design-sem-nome-18.png" alt="Palco 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="6"><img src="https://marmorizou.com/wp-content/uploads/2025/09/Captura-de-tela-2025-09-04-170634-300x199.png" alt="Palest 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
-<div class="mc" data-i="7"><img src="https://marmorizou.com/wp-content/uploads/elementor/thumbs/IMG_0240-scaled-r0yufl8ax3f7klrrzjumm9ggvn5g1ldkodx0xuecg8.jpg" alt="Ricardo 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="0"><img src="./images/evento-camp.jpg" alt="Camp" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="1"><img src="./images/evento-day-capa.jpg" alt="Day" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="2"><img src="./images/evento-imersao.jpg" alt="Imersão 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="3"><img src="./images/evento-day.jpg" alt="Evento 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="4"><img src="./images/evento-networking.jpg" alt="Net 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="5"><img src="./images/marquee-palco.png" alt="Palco 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="6"><img src="./images/marquee-palestrantes.png" alt="Palest 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
+<div class="mc" data-i="7"><img src="./images/palestrante-ricardo.jpg" alt="Ricardo 2" loading="lazy"><div class="mo"><span>⤢ Ampliar</span></div></div>
 </div>
 </section>
 
@@ -351,12 +357,12 @@ body>*{position:relative;z-index:1}
 <section class="sec" id="problemas"><div class="wrap">
 <div class="rv center"><p class="ey">Talvez seja isso que está travando sua marmoraria</p><h2 class="st mx">Talvez o problema não seja falta de <span class="acc">esforço</span>.<br>Talvez seja falta de <span class="acc">direção</span>.</h2><p class="sd mx center">Muitos empresários do setor trabalham duro todos os dias, resolvem problemas o tempo todo e se dedicam ao máximo. Mas, ainda assim, continuam com a sensação de que a marmoraria poderia estar mais organizada em vários sentidos. Não porque falta vontade, mas porque falta saber por onde e como iniciar as correções e melhorias.</p></div>
 <div class="ng">
-<div class="nc rv"><span class="nm">01</span><h3 class="dsp">Você vive apagando incêndio</h3><p>O dia passa e tudo parece urgente. Quando percebe, trabalhou muito, e não resolveu tantas coisas assim..., você não avançou no que realmente importa.</p></div>
+<div class="nc rv"><span class="nm">01</span><h3 class="dsp">Você vive apagando incêndio</h3><p>O dia passa e tudo parece urgente. Quando percebe, trabalhou muito e não resolveu tantas coisas assim, você não avançou no que realmente importa.</p></div>
 <div class="nc rv"><span class="nm">02</span><h3 class="dsp">A empresa depende demais de você</h3><p>Tudo passa pela sua mão: decisão, venda, problema, produção, cliente. E enquanto isso acontece, a empresa não cresce e você fica doente.</p></div>
 <div class="nc rv"><span class="nm">03</span><h3 class="dsp">Falta clareza sobre o que priorizar</h3><p>Você sabe que precisa vender melhor, organizar a gestão e evoluir a operação, mas ainda não enxerga com clareza por onde começar.</p></div>
 <div class="nc rv"><span class="nm">04</span><h3 class="dsp">Você trabalha muito, mas cresce menos do que poderia</h3><p>O esforço existe. A dedicação também. Mas sem direção, a sensação é de estar sempre correndo e quase nunca saindo do lugar.</p></div>
 </div>
-<div class="co rv"><p>É para isso que existe o <span class="acc">Marmorizou Day</span>: para tirar o empresário do automático e dar a direção que falta para a marmoraria crescer.</p></div>
+<div class="co rv"><p>É para isso que existe o <span class="acc">Marmorizou Day</span>: para tirar você do automático e dar a direção que falta para a sua marmoraria crescer.</p></div>
 </div></section>
 
 <!-- SOLUTION -->
@@ -385,7 +391,7 @@ body>*{position:relative;z-index:1}
 <section class="sec sec-a" id="palestrante"><div class="wrap">
 <div class="rv center"><p class="ey">Quem está por trás</p><h2 class="st mx">Conheça quem vai <span class="acc">conduzir o evento</span></h2></div>
 <div class="spk-l rv">
-<div class="spk-ph"><img src="https://marmorizou.com/wp-content/uploads/elementor/thumbs/IMG_0240-scaled-r0yufl8ax3f7klrrzjumm9ggvn5g1ldkodx0xuecg8.jpg" alt="Ricardo Estuqui" loading="lazy"></div>
+<div class="spk-ph"><img src="./images/palestrante-ricardo.jpg" alt="Ricardo Estuqui" loading="lazy"></div>
 <div class="spk-i"><h3>Ricardo Estuqui</h3><p class="sr">CEO da Nobile Marmo &bull; Fundador do Portal Marmorizou</p><p>Empreendedor, formado em Administração e especialista em Marketing. Com ampla experiência em treinamentos para profissionais do setor de rochas, Ricardo construiu o maior hub de conteúdo para marmorarias do Brasil.</p><p>Desde 2018, o Portal Marmorizou vem impactando milhares de empresários com conteúdo prático sobre gestão, vendas, precificação e marketing, trazendo provocações reais e ferramentas aplicáveis ao dia a dia da marmoraria.</p>
 <div class="spk-t"><span>Gestão</span><span>Vendas Consultivas</span><span>Marketing</span><span>Precificação</span><span>Growth</span><span>Liderança</span></div></div>
 </div>
@@ -494,8 +500,8 @@ body>*{position:relative;z-index:1}
 
 <!-- FOOTER -->
 <footer class="ftr"><div class="wrap">
-<img class="ftr-logo" src="https://marmorizou.com/wp-content/uploads/2023/11/icon-marmorizou-portal.png" alt="Marmorizou" loading="lazy">
-<p>Marmorizou Day 2026 &bull; São Paulo, 25 de Julho<br>Novotel São Paulo Zona Norte &bull; Av. Zaki Narchi, 500 — Vila Guilherme<br><br>Dúvidas? <a href="https://wa.me/5547999652443?text=Olá!%20Quero%20mais%20informações%20sobre%20o%20Marmorizou%20Day%202026." target="_blank" rel="noopener">Fale conosco no WhatsApp</a><br><br>&copy; 2026 Portal Marmorizou &bull; Todos os direitos reservados - Deselvolvido por QH4 Growth, especialistas em marketing e vendas.</p>
+<img class="ftr-logo" src="./images/logo-marmorizou.png" alt="Marmorizou" loading="lazy">
+<p>Marmorizou Day 2026 &bull; São Paulo, 25 de Julho<br>Novotel São Paulo Zona Norte &bull; Av. Zaki Narchi, 500 — Vila Guilherme<br><br>Dúvidas? <a href="https://wa.me/5547999652443?text=Olá!%20Quero%20mais%20informações%20sobre%20o%20Marmorizou%20Day%202026." target="_blank" rel="noopener">Fale conosco no WhatsApp</a><br><br>&copy; 2026 Portal Marmorizou &bull; Todos os direitos reservados</p>
 </div></footer>
 
 <!-- WA FLOAT -->
@@ -530,7 +536,7 @@ body>*{position:relative;z-index:1}
 document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){var it=b.parentElement,a=it.querySelector('.faq-a'),op=it.classList.contains('open');document.querySelectorAll('.faq-it.open').forEach(function(o){o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight='0'});if(!op){it.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}})});
 !function(){var o=new IntersectionObserver(function(e){e.forEach(function(i){if(!i.isIntersecting)return;var el=i.target,tg=parseInt(el.dataset.target),sf=el.dataset.suffix||'',st=performance.now();!function a(now){var p=Math.min((now-st)/2000,1),ez=1-Math.pow(1-p,3);el.textContent=Math.floor(ez*tg).toLocaleString('pt-BR')+sf;if(p<1)requestAnimationFrame(a)}(st);o.unobserve(el)})},{threshold:.5});document.querySelectorAll('.sn').forEach(function(e){o.observe(e)})}();
 !function(){var c=document.getElementById('ptcl');if(!c)return;for(var i=0;i<20;i++){var p=document.createElement('div');p.className='ptcl';p.style.left=Math.random()*100+'%';p.style.top=(60+Math.random()*40)+'%';p.style.animationDelay=Math.random()*10+'s';p.style.animationDuration=(7+Math.random()*6)+'s';var s=2+Math.random()*2;p.style.width=s+'px';p.style.height=s+'px';c.appendChild(p)}}();
-!function(){var imgs=['https://marmorizou.com/wp-content/uploads/2025/10/marmorizou_banner-site.jpg','https://marmorizou.com/wp-content/uploads/2025/10/marmorizou_banner-site3.jpg','https://marmorizou.com/wp-content/uploads/2025/09/marmorizou_banner-site-scaled.jpg','https://marmorizou.com/wp-content/uploads/2025/09/marmorizou_banner-site3-scaled.jpg','https://marmorizou.com/wp-content/uploads/2025/09/marmorizou_banner-site2-scaled.jpg','https://marmorizou.com/wp-content/uploads/2025/09/Design-sem-nome-18.png','https://marmorizou.com/wp-content/uploads/2025/09/Captura-de-tela-2025-09-04-170634-300x199.png','https://marmorizou.com/wp-content/uploads/elementor/thumbs/IMG_0240-scaled-r0yufl8ax3f7klrrzjumm9ggvn5g1ldkodx0xuecg8.jpg'],lb=document.getElementById('lb'),lbI=document.getElementById('lbI'),cur=0;function show(i){cur=((i%imgs.length)+imgs.length)%imgs.length;lbI.src=imgs[cur];lb.classList.add('act');document.body.style.overflow='hidden'}function hide(){lb.classList.remove('act');document.body.style.overflow=''}document.querySelectorAll('.mc').forEach(function(c){c.addEventListener('click',function(){show(parseInt(c.dataset.i))})});document.getElementById('lbX').addEventListener('click',hide);document.getElementById('lbP').addEventListener('click',function(e){e.stopPropagation();show(cur-1)});document.getElementById('lbN').addEventListener('click',function(e){e.stopPropagation();show(cur+1)});lb.addEventListener('click',function(e){if(e.target===lb)hide()});document.addEventListener('keydown',function(e){if(!lb.classList.contains('act'))return;if(e.key==='Escape')hide();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)})}();
+!function(){var imgs=['./images/evento-camp.jpg','./images/evento-day-capa.jpg','./images/evento-imersao.jpg','./images/evento-day.jpg','./images/evento-networking.jpg','./images/marquee-palco.png','./images/marquee-palestrantes.png','./images/palestrante-ricardo.jpg'],lb=document.getElementById('lb'),lbI=document.getElementById('lbI'),cur=0;function show(i){cur=((i%imgs.length)+imgs.length)%imgs.length;lbI.src=imgs[cur];lb.classList.add('act');document.body.style.overflow='hidden'}function hide(){lb.classList.remove('act');document.body.style.overflow=''}document.querySelectorAll('.mc').forEach(function(c){c.addEventListener('click',function(){show(parseInt(c.dataset.i))})});document.getElementById('lbX').addEventListener('click',hide);document.getElementById('lbP').addEventListener('click',function(e){e.stopPropagation();show(cur-1)});document.getElementById('lbN').addEventListener('click',function(e){e.stopPropagation();show(cur+1)});lb.addEventListener('click',function(e){if(e.target===lb)hide()});document.addEventListener('keydown',function(e){if(!lb.classList.contains('act'))return;if(e.key==='Escape')hide();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)})}();
 </script>
 </body>
 </html>
